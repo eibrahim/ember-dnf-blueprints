@@ -1,7 +1,7 @@
 {
-  "name": "ember-blueprints",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-dnf-blueprints",
+  "version": "0.0.1",
+  "description": "A set of blueprints and helpers for rapid web app development.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,11 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Emad Ibrahim",
+    "email": "eibrahim@gmail.com",
+    "url": "http://www.dotnetfactory.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",

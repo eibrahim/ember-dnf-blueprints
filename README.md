@@ -1,26 +1,19 @@
-# Ember-blueprints
-
-This README outlines the details of collaborating on this Ember addon.
+# Ember-dnf-blueprints
+A set of blueprints and helpers for rapid web app development.
 
 ## Installation
+`ember install ember-dnf-blueprints`
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+## Generate a navbar
+`ember g dnf-navbar main`
 
-## Running
+## Inculde bootstrap files
+`ember g dnf-bootstrap install`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+## Todos
+* blueprint for generating a footer
+* blueprint for adding google anlaytics
+* blueprint for generating a login form
+* blueprint for generating a signup form
+* get rid of ~un files (git will ignore them, it's only a problem in dev)
