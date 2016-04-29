@@ -1,6 +1,6 @@
 {
   "name": "ember-dnf-blueprints",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A set of blueprints and helpers for rapid web app development.",
   "directories": {
     "doc": "doc",
@@ -42,6 +42,7 @@
     "ember-resolver": "^2.0.3",
     "ember-try": "^0.2.2",
     "loader.js": "^4.0.1",
+    "phantomjs": "2.1.7",
     "rsvp": "^3.2.1"
   },
   "keywords": [

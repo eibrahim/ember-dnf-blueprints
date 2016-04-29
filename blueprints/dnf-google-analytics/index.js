@@ -30,8 +30,7 @@ module.exports = {
         `
 Router.reopen({
   notifyGoogleAnalytics: function() {
-    console.log('sending to GA ' + this.get('url'));
-    return ga('send', 'pageview', {
+    return window.ga('send', 'pageview', {
         'page': this.get('url'),
         'title': this.get('url')
       });
