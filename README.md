@@ -10,6 +10,8 @@ A set of blueprints and helpers for rapid web app development.
 ## Inculde bootstrap files
 `ember g dnf-bootstrap install`
 
+## Add Google Analytics to your ember app
+`ember g dnf-google-anlaytics UA-111111-11`
 
 ## Todos
 * blueprint for generating a footer
