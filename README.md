@@ -13,6 +13,9 @@ A set of blueprints and helpers for rapid web app development.
 ## Add Google Analytics to your ember app
 `ember g dnf-google-anlaytics UA-111111-11`
 
+## Add a favicon to your app
+`ember g dnf-favicon install`
+
 ## Todos
 * blueprint for generating a footer
 * blueprint for adding google anlaytics
