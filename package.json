@@ -1,6 +1,6 @@
 {
   "name": "ember-dnf-blueprints",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "A set of blueprints and helpers for rapid web app development.",
   "directories": {
     "doc": "doc",
@@ -49,6 +49,7 @@
     "ember-addon"
   ],
   "dependencies": {
+    "ember-cli": "2.5.0",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-get-component-path-option": "^1.0.0",
     "ember-cli-normalize-entity-name": "^1.0.0",

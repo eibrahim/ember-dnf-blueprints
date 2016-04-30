@@ -16,6 +16,11 @@ A set of blueprints and helpers for rapid web app development.
 ## Add a favicon to your app
 `ember g dnf-favicon install`
 
+## Add firebase to your app
+`ember g dnf-firebase your-app-name`
+
+if your app url is mywebapp.firebaseio.com then you would run `ember g dnf-firebase mywebapp`
+
 ## Todos
 * blueprint for generating a footer
 * blueprint for adding google anlaytics
