@@ -1,7 +1,8 @@
 import Ember from 'ember';
-<%= importTemplate %>
+import layout from '../templates/components/nav-main';
+
 export default Ember.Component.extend({
-  <%= contents %>,
+  layout,
   tagName: 'nav',
   classNames: ['navbar', 'navbar-default'],
 });

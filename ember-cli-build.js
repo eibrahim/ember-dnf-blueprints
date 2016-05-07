@@ -14,5 +14,10 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
-  return app.toTree();
+  
+   app.import('vendor/bootstrap.min.js');
+   app.import('vendor/bootstrap.min.css');
+   app.import('vendor/theme.min.css');
+   
+return app.toTree();
 };
