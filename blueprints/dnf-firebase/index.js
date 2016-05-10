@@ -13,6 +13,9 @@ module.exports = {
 
   beforeInstall(options) {
     var cliArgs = ['install', 'emberfire'];
+    if (options.dummy) {
+      cliArgs.push('--dummy');
+    }
     var env = {
       inputStream: this.ui.inputStream,
       outputStream: this.ui.outputStream,

@@ -1,0 +1,30 @@
+<div class="row">
+    <form class='col-md-12' {{action 'resetPassword' on='submit' }}>
+        <h2 class="form-signin-heading">Reset Password</h2>
+        {{#if resetErrorMessage }}
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{resetErrorMessage}}
+        </div>
+        {{/if}}
+        <div class="form-group">
+            <label>Email address</label>
+            {{input value=email type="email" class="form-control" placeholder="Email"
+            disabled=isFormDisabled}}
+        </div>
+        <div class="form-group">
+            <label>Temporary Password</label>
+            {{input value=password type="password" class="form-control" placeholder="Password"
+            disabled=isFormDisabled}}
+        </div>
+        <div class="form-group">
+            <label>New Password</label>
+            {{input value=newPassword type="password" class="form-control" placeholder="Password"
+            disabled=isFormDisabled}}
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" disabled={{isFormDisabled}}>Reset Password</button>
+        {{#link-to 'account' class='btn btn-link'}}Login{{/link-to}}
+    </form>
+
+</div>

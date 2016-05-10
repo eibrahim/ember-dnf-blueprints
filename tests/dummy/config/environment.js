@@ -2,10 +2,13 @@
 
 module.exports = function(environment) {
   var ENV = {
+      torii: {sessionServiceName: 'session'},
+
     modulePrefix: 'dummy',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    firebase: 'http://dnf.firebaseio.com/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

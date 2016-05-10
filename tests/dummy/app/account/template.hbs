@@ -1,0 +1,91 @@
+{{#if session.isAuthenticated}}
+<!--.-->
+{{#if session.currentUser.profileImageURL}}
+<img src="{{session.currentUser.profileImageURL}}">
+<!--.-->
+{{/if}}
+<!--.-->
+Logged in as {{session.currentUser.email}}
+<button {{action "signOut"}}>Sign out</button>
+<!--.-->
+{{else}}
+<!--.-->
+{{#if showPasswordReset }}
+<!--.-->
+<div class="row">
+    <form class='col-md-6 disabled' {{action 'signIn' 'password' on='submit' }}>
+        <h2 class="form-signin-heading">Login</h2>
+        {{#if loginErrorMessage }}
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{loginErrorMessage}}
+        </div>
+        {{/if}}
+        <div class="form-group">
+            <label>Email address</label>
+            {{input value=loginEmail type="email" class="form-control" placeholder="Email"
+            disabled=isLoginDisabled}}
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            {{input value=loginPassword type="password" class="form-control" placeholder="Password"
+            disabled=isLoginDisabled}}
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" disabled={{isLoginDisabled}}>Sign in</button>
+        <a class="btn btn-link " {{action 'forgotPassword'}}>Forgot Password?</a>
+    </form>
+</div>
+{{else}}
+<!--.-->
+<div class="row">
+    <form class='col-md-6 disabled' {{action 'signIn' 'password' on='submit' }}>
+        <h2 class="form-signin-heading">Login</h2>
+        {{#if loginErrorMessage }}
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{loginErrorMessage}}
+        </div>
+        {{/if}}
+        <div class="form-group">
+            <label>Email address</label>
+            {{input value=loginEmail type="email" class="form-control" placeholder="Email"
+            disabled=isLoginDisabled}}
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            {{input value=loginPassword type="password" class="form-control" placeholder="Password"
+            disabled=isLoginDisabled}}
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" disabled={{isLoginDisabled}}>Sign in</button>
+        <a class="btn btn-link " {{action 'forgotPassword'}}>Forgot Password?</a>
+    </form>
+
+    <form class='col-md-6' {{action 'signUp' 'password' on='submit' }}>
+        <h2>Create Account</h2>
+        {{#if signupErrorMessage }}
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{signupErrorMessage}}
+        </div>
+        {{/if}}
+        <div class="form-group">
+            <label>Email address</label>
+            {{input value=signupEmail type="email" class="form-control" placeholder="Email"
+            disabled=isSignupDisabled}}
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            {{input value=signupPassword type="password" class="form-control" placeholder="Password"
+            disabled=isSignupDisabled}}
+        </div>
+        <button class="btn btn-lg btn-success btn-block" type="submit" disabled={{isSignupDisabled}}>Create Account</button>
+    </form>
+</div>
+
+<!--.-->
+{{/if}}
+<!--.-->
+{{/if}}
