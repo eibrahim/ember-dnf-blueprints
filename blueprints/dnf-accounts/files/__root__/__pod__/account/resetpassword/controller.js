@@ -18,7 +18,7 @@ default Ember.Controller.extend({
       this.get('auth').resetPassword(email, password, newPassword).then(() => {
         this.get('auth').signIn('password', email, newPassword).then(() => {
           this.transitionToRoute('account');
-        }).catch(error => {
+        }).catch(() => {
           this.transitionToRoute('account');
         }).finally(() => {
           this.set('isFormDisabled', false);
